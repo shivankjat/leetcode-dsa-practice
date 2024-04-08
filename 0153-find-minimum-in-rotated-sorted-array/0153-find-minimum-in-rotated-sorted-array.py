@@ -3,7 +3,7 @@ class Solution:
         n=len(nums)
         low=0
         high=n-1
-        ans=sys.maxsize
+        ans=nums[0]
         
         while(low<=high):
             mid=(low+high)//2
@@ -15,7 +15,6 @@ class Solution:
             if(nums[low]<=nums[mid]):
                 ans=min(ans,nums[low])
                 low=mid+1
-            
             else:
                 ans=min(ans,nums[mid])
                 high=mid-1
