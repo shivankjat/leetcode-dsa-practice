@@ -1,5 +1,3 @@
-
-
 class Solution:
     def possible(self,bloomDay, day, m, k):
         n = len(bloomDay)
